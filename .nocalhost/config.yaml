@@ -1,19 +1,21 @@
-name: nodejs-nodejs
-serviceType: deployment
-containers:
-  - name: nodejs
-    dev:
-      gitUrl: https://github.com/zzzhangqi/react-demo
-      image: nocalhost-docker.pkg.coding.net/nocalhost/dev-images/node:14
-      shell: ""
-      workDir: ""
-      storageClass: ""
-      resources: null
-      persistentVolumeDirs: []
-      command: null
-      debug: null
-      hotReload: false
-      sync: null
-      env: []
-      portForward:
-        - 3000:3000
+  name: "nodejs-nodejs"
+  serviceType: "deployment"
+  containers: 
+    - 
+      name: "nodejs"
+      hub: null
+      dev: 
+        gitUrl: "https://github.com/zzzhangqi/react-demo"
+        image: "nocalhost-docker.pkg.coding.net/nocalhost/dev-images/node:14"
+        shell: ""
+        workDir: ""
+        storageClass: ""
+        resources: null
+        persistentVolumeDirs: []
+        command: null
+        debug: null
+        hotReload: false
+        sync: null
+        env: []
+        portForward: 
+          - "3000:3000"
